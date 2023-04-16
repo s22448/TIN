@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ćwiczenie B</title>
+</head>
+<body>
+<form>
+    <label for="username">Nazwa użytkownika:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Hasło:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label>Płeć:</label>
+    <label for="male">Mężczyzna</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Kobieta</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="other">Inne</label>
+    <input type="radio" id="other" name="gender" value="other">
+
+    <label>Zainteresowania:</label>
+    <input type="checkbox" id="hobby1" name="hobby[]" value="sport">
+    <label for="hobby1">Sport</label>
+    <input type="checkbox" id="hobby2" name="hobby[]" value="muzyka">
+    <label for="hobby2">Muzyka</label>
+    <input type="checkbox" id="hobby3" name="hobby[]" value="podróże">
+    <label for="hobby3">Podróże</label>
+
+    <label for="country">Kraj:</label>
+    <select id="country" name="country">
+        <option value="">--Wybierz kraj--</option>
+        <optgroup label="Europa">
+            <option value="pl">Polska</option>
+            <option value="de">Niemcy</option>
+            <option value="fr">Francja</option>
+        </optgroup>
+        <optgroup label="Azja">
+            <option value="jp">Japonia</option>
+            <option value="cn">Chiny</option>
+            <option value="in">Indie</option>
+        </optgroup>
+    </select>
+
+    <label for="message">Wiadomość:</label>
+    <textarea id="message" name="message"></textarea>
+
+    <input type="submit" value="Wyślij">
+    <input type="reset" value="Resetuj">
+</form>
+</body>
+</html>

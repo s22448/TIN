@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konwerter temperatur</title>
+    <script src="4a.js"></script>
+</head>
+<body>
+<form>
+    <label for="temperature">Temperatura:</label>
+    <input type="number" id="temperature" name="temperature">
+    <label for="scale"></label>
+    <select id="scale" name="scale">
+        <option value="Celsius">Stopni Celsjusza</option>
+        <option value="Fahrenheit">Stopni Fahrenheit'a</option>
+    </select>
+    <button type="button" onclick="convertTemperature()">Konwertuj</button>
+</form>
+<div id="result"></div>
+</body>
+</html>
